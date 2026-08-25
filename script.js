@@ -74,8 +74,8 @@ const documentLines = [
 
     [
         "DOCTOR",
-        "3",
-        "ULUKI",
+        null,
+        null,
         null,
         null,
         null

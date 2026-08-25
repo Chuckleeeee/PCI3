@@ -11,8 +11,8 @@ const decryptButton = document.getElementById("decrypt-button");
 const alienLog = document.getElementById("alien-log");
 const translationStatus = document.getElementById("translation-status");
 
-const titleWord1 = document.getElementById("title-word-1");
-const titleWord2 = document.getElementById("title-word-2");
+//const titleWord1 = document.getElementById("title-word-1");
+//const titleWord2 = document.getElementById("title-word-2");
 
 
 /* --------------------------------------------------
@@ -248,7 +248,7 @@ function scrambleTokens() {
    TITLE SCRAMBLE
 -------------------------------------------------- */
 
-function scrambleTitle() {
+/*function scrambleTitle() {
 
     titleWord1.textContent =
         generateAlienWord(5);
@@ -256,7 +256,7 @@ function scrambleTitle() {
     titleWord2.textContent =
         generateAlienWord(6);
 
-}
+}*/
 
 
 /* --------------------------------------------------
@@ -273,8 +273,6 @@ const decryptionOrder = [
     "UNLOCK",
     "DANGER",
     "DOCTOR",
-    "3",
-    "ULUKI"
 
 ];
 
@@ -317,7 +315,7 @@ function startDecryption() {
         setInterval(() => {
 
             scrambleTokens();
-            scrambleTitle();
+            //scrambleTitle();
 
         }, 65);
 
@@ -395,11 +393,11 @@ function finishDecryption() {
 
     /* Stop title scrambling */
 
-    titleWord1.textContent =
+    /*titleWord1.textContent =
         "RECOVERED";
 
     titleWord2.textContent =
-        "DRIVES";
+        "DRIVES";*/
 
 
     /* One final scramble for alien text */
